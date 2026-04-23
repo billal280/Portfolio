@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/x-icon" href="img/ravenclaw.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/b5b631b881.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    window.axeptioSettings = {
+      clientId: "66d8dd0c45644072527b0c95",
+      cookiesVersion: "crypt'air-fr-EU",
+      googleConsentMode: {
+        default: {
+          analytics_storage: "denied",
+          ad_storage: "denied",
+          ad_user_data: "denied",
+          ad_personalization: "denied",
+          wait_for_update: 500
+        }
+      }
+    };
+    (function(d, s) {
+      var t = d.getElementsByTagName(s)[0], e = d.createElement(s);
+      e.async = true; e.src = "//static.axept.io/sdk.js";
+      t.parentNode.insertBefore(e, t);
+    })(document, "script");
+  </script>
+  <title>Compétences Portfolio | Billal SAIDI</title>
+</head>
+<body class="bg-gray-900 text-white">
+
+  <!-- HEADER -->
+  <header class="bg-gray-800 shadow">
+    <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="flex items-center">
+        <a href="index.html" class="flex items-center">
+          <img src="img/logo.png" alt="Logo" class="h-10 w-10" />
+        </a>
+      </div>
+      <div class="hidden md:block">
+        <ul class="flex space-x-6">
+          <li><a href="apropos.html" class="text-lg md:text-xl font-bold hover:text-gray-300 transition-transform duration-200 transform hover:scale-105">À propos</a></li>
+          <li><a href="projets.html" class="text-lg md:text-xl font-bold hover:text-gray-300 transition-transform duration-200 transform hover:scale-105">Expériences / Projets</a></li>
+          <li><a href="competences.html" class="text-lg md:text-xl font-bold hover:text-gray-300 transition-transform duration-200 transform hover:scale-105">Compétences</a></li>
+          <li><a href="contact.html" class="text-lg md:text-xl font-bold hover:text-gray-300 transition-transform duration-200 transform hover:scale-105">Contact</a></li>
+        </ul>
+      </div>
+      <div class="md:hidden">
+        <button id="mobile-menu-button" class="text-white focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
+    </nav>
+    <div id="mobile-menu" class="hidden md:hidden bg-gray-800">
+      <ul class="flex flex-col space-y-2 p-4">
+        <li><a href="apropos.html" class="text-lg md:text-xl font-bold block hover:text-gray-300 transition-transform duration-200 transform hover:scale-105">À propos</a></li>
+        <li><a href="projets.html" class="text-lg md:text-xl font-bold block hover:text-gray-300 transition-transform duration-200 transform hover:scale-105">Expériences / Projets</a></li>
+        <li><a href="competences.html" class="text-lg md:text-xl font-bold block hover:text-gray-300 transition-transform duration-200 transform hover:scale-105">Compétences</a></li>
+        <li><a href="contact.html" class="text-lg md:text-xl font-bold block hover:text-gray-300 transition-transform duration-200 transform hover:scale-105">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+  <script>
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+  <!-- MAIN -->
+  <main class="container mx-auto px-4 py-10">
+    <h1 class="text-4xl md:text-5xl font-bold text-center mb-8">Mes Compétences</h1>
+
+    <div class="skills-table space-y-10">
+
+      <div class="skill-group">
+        <h2 class="text-2xl font-semibold mb-4 text-center">Langages de Programmation</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div class="skill-card bg-gray-800 p-4 rounded-lg shadow-lg text-center transition-transform transform hover:scale-105 duration-300">
+            <img src="img/javaa.png" alt="JAVA" class="mx-auto w-16 h-16 mb-2">
+            <div class="textcompetences text-lg font-semibold">JAVA</div>
+          </div>
+          <div class="skill-card bg-gray-800 p-4 rounded-lg shadow-lg text-center transition-transform transform hover:scale-105 duration-300">
+            <img src="img/sharp.png" alt="C#" class="mx-auto w-16 h-16 mb-2">
+            <div class="textcompetences text-lg font-semibold">C#</div>
+          </div>
+          <div class="skill-card bg-gray-800 p-4 rounded-lg shadow-lg text-center transition-transform transform hover:scale-105 duration-300">
+            <img src="img/py.png" alt="Python" class="mx-auto w-16 h-16 mb-2">
+            <div class="textcompetences text-lg font-semibold">PYTHON</div>
+          </div>
+          <div class="skill-card bg-gray-800 p-4 rounded-lg shadow-lg text-center transition-transform transform hover:scale-105 duration-300">
+            <img src="img/php.png" alt="PHP" class="mx-auto w-16 h-16 mb-2">
+            <div class="textcompetences text-lg font-semibold">PHP</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h2 class="text-2xl font-semibold mb-4 text-center">Infrastructure et Orchestration</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div class="skill-card bg-gray-800 p-4 rounded-lg shadow-lg text-center transition-transform transform hover:scale-105 duration-300">
+            <img src="img/docker.png" alt="Logo Docker" class="mx-auto w-16 h-16 mb-2">
+            <div class="textcompetences text-lg font-semibold">DOCKER</div>
+          </div>
+          <div class="skill-card bg-gray-800 p-4 rounded-lg shadow-lg text-center transition-transform transform hover:scale-105 duration-300">
+            <img src="img/kube.png" alt="Logo Kubernetes" class="mx-auto w-16 h-16 mb-2">
+            <div class="textcompetences text-lg font-semibold">KUBERNETES</div>
+          </div>
+          <div class="skill-card bg-gray-800 p-4 rounded-lg shadow-lg text-center transition-transform transform hover:scale-105 duration-300">
+            <img src="img/helm.png" alt="Logo HELM" class="mx-auto w-16 h-16 mb-2">
+            <div class="textcompetences text-lg font-semibold">HELM</div>
+          </div>
+          <div class="skill-card bg-gray-800 p-4 rounded-lg shadow-lg text-center transition-transform transform hover:scale-105 duration-300">
+            <img src="img/as.png" alt="Logo AWS" class="mx-auto w-16 h-16 mb-2">
+            <div class="textcompetences text-lg font-semibold">AWS</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h2 class="text-2xl font-semibold mb-4 text-center">Intégration et Déploiement Continu (CI/CD)</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div class="skill-card bg-gray-800 p-4 rounded-lg shadow-lg text-center transition-transform transform hover:scale-105 duration-300">
+            <img src="img/jenkins.png" alt="Jenkins" class="mx-auto w-16 h-16 mb-2">
+            <div class="textcompetences text-lg font-semibold">JENKINS</div>
+          </div>
+          <div class="skill-card bg-gray-800 p-4 rounded-lg shadow-lg text-center transition-transform transform hover:scale-105 duration-300">
+            <img src="img/git.png" alt="GIT" class="mx-auto w-16 h-16 mb-2">
+            <div class="textcompetences text-lg font-semibold">GIT</div>
+          </div>
+          <div class="skill-card bg-gray-800 p-4 rounded-lg shadow-lg text-center transition-transform transform hover:scale-105 duration-300">
+            <img src="img/gitlab.png" alt="GitLab" class="mx-auto w-16 h-16 mb-2">
+            <div class="textcompetences text-lg font-semibold">GITLAB</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h2 class="text-2xl font-semibold mb-4 text-center">Base de données</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div class="skill-card bg-gray-800 p-4 rounded-lg shadow-lg text-center transition-transform transform hover:scale-105 duration-300">
+            <img src="img/mysql.png" alt="MySQL" class="mx-auto w-16 h-16 mb-2">
+            <div class="textcompetences text-lg font-semibold">MySQL</div>
+          </div>
+          <div class="skill-card bg-gray-800 p-4 rounded-lg shadow-lg text-center transition-transform transform hover:scale-105 duration-300">
+            <img src="img/maria.png" alt="MariaDB" class="mx-auto w-16 h-16 mb-2">
+            <div class="textcompetences text-lg font-semibold">MariaDB</div>
+          </div>
+          <div class="skill-card bg-gray-800 p-4 rounded-lg shadow-lg text-center transition-transform transform hover:scale-105 duration-300">
+            <img src="img/post.png" alt="PostgreSQL" class="mx-auto w-16 h-16 mb-2">
+            <div class="textcompetences text-lg font-semibold">PostgreSQL</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h2 class="text-2xl font-semibold mb-4 text-center">Scripting et Automatisation</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div class="skill-card bg-gray-800 p-4 rounded-lg shadow-lg text-center transition-transform transform hover:scale-105 duration-300">
+            <img src="img/bash.png" alt="Bash" class="mx-auto w-16 h-16 mb-2">
+            <div class="textcompetences text-lg font-semibold">BASH</div>
+          </div>
+          <div class="skill-card bg-gray-800 p-4 rounded-lg shadow-lg text-center transition-transform transform hover:scale-105 duration-300">
+            <img src="img/shell.png" alt="Shell Scripting" class="mx-auto w-16 h-16 mb-2">
+            <div class="textcompetences text-lg font-semibold">SHELL SCRIPTING</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-800 py-6 m-0">
+    <div class="container mx-auto text-center">
+      <p class="text-lg">&copy; 2026 @ Billal SAIDI. Tous droits réservés.</p>
+      <div class="flex justify-center space-x-4 mt-4">
+        <a href="https://www.linkedin.com/in/billal-sa%C3%AFdi/" target="_blank" class="hover:text-gray-300 transition-colors duration-200">
+          <i class="fab fa-linkedin fa-2x"></i>
+        </a>
+        <a href="https://github.com/billal280" target="_blank" class="hover:text-gray-300 transition-colors duration-200">
+          <i class="fab fa-github fa-2x"></i>
+        </a>
+        <a href="https://www.instagram.com/billal.s_" target="_blank" class="hover:text-gray-300 transition-colors duration-200">
+          <i class="fab fa-instagram fa-2x"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
