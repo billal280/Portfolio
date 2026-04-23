@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/x-icon" href="img/ravenclaw.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/b5b631b881.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    window.axeptioSettings = {
+      clientId: "66d8dd0c45644072527b0c95",
+      cookiesVersion: "crypt'air-fr-EU",
+      googleConsentMode: {
+        default: {
+          analytics_storage: "denied",
+          ad_storage: "denied",
+          ad_user_data: "denied",
+          ad_personalization: "denied",
+          wait_for_update: 500
+        }
+      }
+    };
+    (function(d, s) {
+      var t = d.getElementsByTagName(s)[0], e = d.createElement(s);
+      e.async = true; e.src = "//static.axept.io/sdk.js";
+      t.parentNode.insertBefore(e, t);
+    })(document, "script");
+  </script>
+  <title>Expériences / Projets | Billal SAIDI</title>
+</head>
+<br>
+<body class="bg-gray-900 text-white font-sans">
+
+  <!-- HEADER -->
+  <header class="bg-gray-800 shadow">
+    <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="flex items-center">
+        <a href="index.html" class="flex items-center">
+          <img src="img/logo.png" alt="Logo" class="h-10 w-10" />
+        </a>
+      </div>
+      <div class="hidden md:block">
+        <ul class="flex space-x-6">
+          <li><a href="apropos.html" class="text-lg md:text-xl font-bold hover:text-gray-300 transition-transform duration-200 transform hover:scale-105">À propos</a></li>
+          <li><a href="projets.html" class="text-lg md:text-xl font-bold hover:text-gray-300 transition-transform duration-200 transform hover:scale-105">Expériences / Projets</a></li>
+          <li><a href="competences.html" class="text-lg md:text-xl font-bold hover:text-gray-300 transition-transform duration-200 transform hover:scale-105">Compétences</a></li>
+          <li><a href="contact.html" class="text-lg md:text-xl font-bold hover:text-gray-300 transition-transform duration-200 transform hover:scale-105">Contact</a></li>
+        </ul>
+      </div>
+      <div class="md:hidden">
+        <button id="mobile-menu-button" class="text-white focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
+    </nav>
+    <div id="mobile-menu" class="hidden md:hidden bg-gray-800">
+      <ul class="flex flex-col space-y-2 p-4">
+        <li><a href="apropos.html" class="text-lg md:text-xl font-bold block hover:text-gray-300 transition-transform duration-200 transform hover:scale-105">À propos</a></li>
+        <li><a href="projets.html" class="text-lg md:text-xl font-bold block hover:text-gray-300 transition-transform duration-200 transform hover:scale-105">Expériences / Projets</a></li>
+        <li><a href="competences.html" class="text-lg md:text-xl font-bold block hover:text-gray-300 transition-transform duration-200 transform hover:scale-105">Compétences</a></li>
+        <li><a href="contact.html" class="text-lg md:text-xl font-bold block hover:text-gray-300 transition-transform duration-200 transform hover:scale-105">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+  <script>
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+  <!-- MAIN -->
+  <main class="container mx-auto px-4 py-10">
+
+    <h1 class="text-4xl md:text-5xl font-bold text-center mb-8">Mes Expériences</h1>
+
+    <br><br>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+      <div class="bg-gray-800 rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105 duration-300 flex">
+        <img src="img/thales.png" alt="Logo thales" class="w-32 h-32 rounded-lg shadow-lg mr-4">
+        <div>
+          <h2 class="text-2xl font-bold mb-2">THALES</h2>
+          <p>Septembre 2024 / Août 2026 - Contrat en alternance</p>
+          <p class="text-lg mb-4">Ingénieur DevOps</p>
+        </div>
+      </div>
+
+      <div class="bg-gray-800 rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105 duration-300 flex">
+        <img src="img/kaiman.jpeg" alt="Photo Bachelor" class="w-32 h-32 rounded-lg shadow-lg mr-4">
+        <div>
+          <h2 class="text-2xl font-bold mb-2">KAIMAN</h2>
+          <p>Octobre 2023 / Septembre 2024 - Contrat en alternance</p>
+          <p class="text-lg mb-4">Développeur Web</p>
+        </div>
+      </div>
+
+      <div class="bg-gray-800 rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105 duration-300 flex">
+        <img src="img/gcz.jpeg" alt="Logo GCZ Design" class="w-32 h-32 rounded-lg shadow-lg mr-4">
+        <div>
+          <h2 class="text-2xl font-bold mb-2">GCZ Design</h2>
+          <p>Mai 2022 / Juillet 2022 et Janvier 2023 / Mars 2023 - Stage</p>
+          <p class="text-lg mb-4">Développement et maintenance de site e-commerce PrestaShop</p>
+        </div>
+      </div>
+
+      <div class="bg-gray-800 rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105 duration-300 flex">
+        <img src="img/terre.jpg" alt="Logo Terre Ludique" class="w-32 h-32 rounded-lg shadow-lg mr-4">
+        <div>
+          <h2 class="text-2xl font-bold mb-2">Terre Ludique</h2>
+          <p>Octobre 2021 / Janvier 2022 - Service Civique</p>
+          <p class="text-lg mb-4">Développer la coopération intergénérationnelle et interculturelle en ludothèque et escape game</p>
+        </div>
+      </div>
+
+    </div>
+
+    <br><br><br>
+
+    <h1 class="text-4xl md:text-5xl font-bold text-center mb-8">Mon Parcours</h1>
+
+    <br><br>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+      <div class="bg-gray-800 rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105 duration-300 flex">
+        <img src="img/ynov.png" alt="Photo Mastère" class="w-32 h-32 rounded-lg shadow-lg mr-4">
+        <div>
+          <h2 class="text-2xl font-bold mb-2">Aix Ynov Campus</h2>
+          <p>2024 / 2026</p>
+          <p class="text-lg mb-4">Mastère Expert en cloud, sécurité &amp; infrastructure</p>
+        </div>
+      </div>
+
+      <div class="bg-gray-800 rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105 duration-300 flex">
+        <img src="img/doranco.png" alt="Photo Bachelor" class="w-32 h-32 rounded-lg shadow-lg mr-4">
+        <div>
+          <h2 class="text-2xl font-bold mb-2">DORANCO École Sup' des Tech Créatives</h2>
+          <p>2023 / 2024</p>
+          <p class="text-lg mb-4">Bachelor Concepteur Développeur d'Application</p>
+        </div>
+      </div>
+
+      <div class="bg-gray-800 rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105 duration-300 flex">
+        <img src="img/curie.jpg" alt="Photo Lycée Marie Curie" class="w-32 h-32 rounded-lg shadow-lg mr-4">
+        <div>
+          <h2 class="text-2xl font-bold mb-2">Lycée Marie Curie</h2>
+          <p>2021 / 2023</p>
+          <p class="text-lg mb-4">BTS Service Informatique aux Organisations option Solutions Logicielles et Applications Métiers et Cybersécurité.</p>
+        </div>
+      </div>
+
+      <div class="bg-gray-800 rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105 duration-300 flex">
+        <img src="img/perier.jpeg" alt="Photo Lycée Périer" class="w-32 h-32 rounded-lg shadow-lg mr-4">
+        <div>
+          <h2 class="text-2xl font-bold mb-2">Lycée Périer</h2>
+          <p>2018 / 2021</p>
+          <p class="text-lg mb-4">Baccalauréat général, Mathématiques / Sciences économiques. Mention Assez Bien.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <br><br><br>
+
+    <h1 class="text-4xl md:text-5xl font-bold text-center mb-8">Mes Projets</h1>
+
+    <br><br>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+      <div class="bg-gray-800 rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105 duration-300 flex">
+        <img src="img/cryptair.png" alt="Logo Cryptair" class="w-32 h-32 rounded-lg shadow-lg mr-4">
+        <div>
+          <h2 class="text-2xl font-bold mb-2">Crypt'Air</h2>
+          <p>2024</p>
+          <p class="text-lg mb-4">Projet de fin d'étude Bachelor Concepteur Développeur d'Application. Crétation d'un blog sécurisé sur l'univers des cryptomonnaies.</p>
+          <a href="#" class="text-sky-500 hover:underline">Voir plus</a>
+        </div>
+      </div>
+
+      <div class="bg-gray-800 rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105 duration-300 flex">
+        <img src="img/mangemort.png" alt="Logo Mangemort" class="w-32 h-32 rounded-lg shadow-lg mr-4">
+        <div>
+          <h2 class="text-2xl font-bold mb-2">Slytherin Univer's</h2>
+          <p>2024</p>
+          <p class="text-lg mb-4">Projet personnel : Plongez dans l'univers enchanteur d'Harry Potter à travers ce projet, qui offre une multitude de fonctionnalités toutes plus magiques les unes que les autres.</p>
+          <a href="#" class="text-sky-500 hover:underline">A venir</a>
+        </div>
+      </div>
+
+    </div>
+
+    <br>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-800 py-6 m-0">
+    <div class="container mx-auto text-center">
+      <p class="text-lg">&copy; 2026 @ Billal SAIDI. Tous droits réservés.</p>
+      <div class="flex justify-center space-x-4 mt-4">
+        <a href="https://www.linkedin.com/in/billal-sa%C3%AFdi/" target="_blank" class="hover:text-gray-300 transition-colors duration-200">
+          <i class="fab fa-linkedin fa-2x"></i>
+        </a>
+        <a href="https://github.com/billal280" target="_blank" class="hover:text-gray-300 transition-colors duration-200">
+          <i class="fab fa-github fa-2x"></i>
+        </a>
+        <a href="https://www.instagram.com/billal.s_" target="_blank" class="hover:text-gray-300 transition-colors duration-200">
+          <i class="fab fa-instagram fa-2x"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
